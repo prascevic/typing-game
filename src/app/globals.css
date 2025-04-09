@@ -24,3 +24,19 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+@keyframes caretFlashSmooth {
+  0%,to {
+      opacity: 0
+  }
+
+  50% {
+      opacity: 1
+  }
+}
+#caret{
+    /* background: #e2b714; */
+    animation: caretFlashSmooth 1s infinite;
+    position: absolute;
+    border-radius: .5rem;
+    transform-origin: top left
+}

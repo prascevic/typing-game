@@ -1,28 +1,11 @@
 import Image from "next/image";
-import Link from 'next/link'
+// import words from "../../data/words"
+import Typing from "../../components/Typing"
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <div className="flex items-center">
-          <Image
-            className="dark:invert"
-            src="/logo.svg"
-            alt="Next.js logo"
-            width={90}
-            height={38}
-            priority
-          />
-          <h1 className="text-4xl ml-4">Typing test</h1>
-        </div>
-        <div className="self-center flex gap-4 items-center flex-col sm:flex-row">
-          <Link
-            href="/test"
-            className="flex-center cursor-pointer rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-          >
-            Start
-          </Link>
-        </div>
+    <div className="grid items-center justify-items-center min-h-screen p-8 pb-20 gap-16 font-[family-name:var(--font-geist-sans)]">
+      <main className="flex flex-col row-start-2 items-center">
+        <Typing></Typing>
       </main>
       {/* <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
         <a
@@ -74,3 +57,5 @@ export default function Home() {
     </div>
   );
 }
+
+
